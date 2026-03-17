@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body {
+    background-color: rgb(233, 233, 233);
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(35, 35, 88);
+    color: white;
 }
 
 header > .navbar > ul{
@@ -17,4 +24,224 @@ header > .navbar > ul{
     gap: 20px;
     list-style-type: none;
     color: black;
+    text-decoration: none;
+}
+
+header > h1 {
+    margin: 20px 0px 10px 0px;
+    font-family: 'afacad';
+    font-size: 50px;
+}
+
+header > p {
+    font-family: 'afacad';
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.navbar {
+    margin: 20px 0 00px 0;
+    padding: 20px 0px 20px 0;
+    width: 99.2vw;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    font-family: 'afacad';
+}
+
+.navbar > ul > li > a:hover {
+    text-decoration: underline;
+    color: rgb(73, 73, 73);
+    font-family: 'afacad';
+}
+
+main {
+    padding: 20px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.img {
+    width: 1000px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+hr {
+    width: 50px;
+    margin: 10px auto;
+    border: 3px solid rgb(44, 141, 165);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.contain > h3 {
+    font-size: 30px;
+    padding: 20px 0px 0px 0px;
+}
+
+.contain > p {
+    text-align: left;
+    margin: 50px 0px 50px 0px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cards > .information > h3 {
+    color: rgb(0, 24, 131);
+    margin: 10px 0 20px 0;
+}
+
+.cards > .information {
+    background-color: rgb(238, 238, 238);
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+}
+
+.cards > .information > p {
+    text-align: left;
+    margin: 30px 20px 40px 20px;
+}
+
+.large-card {
+    margin: 30px 0 40px 0;
+    background-color: rgb(238, 238, 238);
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.large-card > h3 {
+    color: rgb(0, 11, 58);
+    margin: 20px 0px 20px 0;
+}
+
+.large-card > ul,ol {
+    margin: 0 0 20px 50px;
+}
+
+.midias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.midias > video {
+    width: 450px;
+    height: 300px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-collapse: collapse;
+  border: 2px solid rgb(196, 196, 196);
+}
+
+
+th {
+  background-color: #021342;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 20px 30px 20px 30px;
+  text-align: left;
+}
+
+td {
+  padding: 10px 30px 10px 30px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.valor {
+    color: red;
+    font-weight: 500;
+}
+
+.div-container {
+    background-color: rgb(241, 241, 241);
+    display: block;
+    margin: 40px auto;
+    width: 26.25rem;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* cima, direita, baixo, esquerda (Padding e Margin ou qualquer valor que tenha 4 lados)*/
+    padding: 1.25rem 2.813rem 1.25rem 1.25rem;
+    border-radius: 1.0rem;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    margin: 2rem 0;
+}
+
+#button {
+    width: 100%;                
+    background-color: #021342;  
+    color: white;               
+    padding: 15px;              
+    border: none;               
+    border-radius: 5px;         
+    font-family: 'afacad';     
+    font-size: 18px;           
+    font-weight: 600;           
+    cursor: pointer;           
+    transition: background 0.3s ease; 
+    margin-top: 10px;           
+}
+
+#button:hover {
+    background-color: #5073d3;
+}
+
+
+footer {
+    background-color: #021342;
+    color: white;
+    text-align: center;
+    padding: 50px;
 }

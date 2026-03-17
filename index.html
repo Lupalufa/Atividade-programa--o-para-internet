@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -23,9 +29,9 @@
     <main>
       <div class="container">
         <div class="img">
-          <img src="" alt="#" />
+          <img src="./assets/img/1082.jpg" alt="#" />
         </div>
-        <div>
+        <div class="contain">
           <h3>Descubra o Inexplorado</h3>
           <hr />
           <p>
@@ -63,6 +69,8 @@
           </div>
 
           <div class="large-card">
+            <h3>O que está sempre incluso: (Listas)</h3>
+
             <ul>
               <li>Suporte emergencial 24 horas por dia.</li>
               <li>Seguro viagem internacional com cobertura máxima.</li>
@@ -87,6 +95,7 @@
             </audio>
           </div>
           <h3>Tabela de investimentos</h3>
+          <hr />
 
           <table border="1">
             <thead>
@@ -102,37 +111,39 @@
                 <td>Auroras Boreais (Islândia)</td>
                 <td>10 Dias</td>
                 <td>Igloo de Vidro Premium</td>
-                <td>R$ 25.000</td>
+                <td class="valor">R$ 25.000</td>
               </tr>
               <tr>
                 <td>Safári Exclusivo (Quênia)</td>
                 <td>14 Dias</td>
                 <td>Lodge de Luxo</td>
-                <td>R$ 32.800</td>
+                <td class="valor">R$ 32.800</td>
               </tr>
               <tr>
                 <td>Ilhas Maldivas</td>
                 <td>8 Dias</td>
                 <td>Bangalô sobre a água</td>
-                <td>R$ 41.500</td>
+                <td class="valor">R$ 41.500</td>
               </tr>
             </tbody>
           </table>
 
           <h3>Inicie sua jornada</h3>
+          <hr />
           <div class="div-container">
             <form action="/enviar" method="post">
-              <h1>Login</h1>
-
               <div class="input-box">
+                <label for="Nome completo">Nome Completo</label>
                 <input placeholder="Nome Completo" type="text" />
               </div>
 
               <div class="input-box">
+                <label for="E-mail ou Contato">E-mail ou Contato</label>
                 <input placeholder="E-mail ou Contato" type="email" />
               </div>
 
               <div class="input-box">
+                <label for="Destino de interesse">Destino de interesse</label>
                 <input placeholder="Destino de interesse" type="text" />
               </div>
 
@@ -143,6 +154,10 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>
+        Projeto de Excelência Visual - 3º Semestre (Apenas HTML e CSS Básico)
+      </p>
+    </footer>
   </body>
 </html>
